@@ -30,6 +30,27 @@ function pobierzDane() {
 
                 document.body.appendChild(userName);
 
+
+
+                var userId = document.createElement('p');
+
+                userId.innerHTML = 'ID użytkownika to: ' + returnData.userId;
+
+                console.log(userId);
+
+                document.body.appendChild(userId);
+
+
+                var userURL = document.createElement('p');
+
+                userURL.innerHTML = 'URL użytkownika to: <a href ="http://' + returnData.userURL + '">' + returnData.userURL + '</a>';
+
+                console.log(userURL);
+
+                document.body.appendChild(userURL);
+
+
+
                 httpReq = null;
 
             }
@@ -44,4 +65,4 @@ function pobierzDane() {
 
 }
 
-pobierzDane();
+//pobierzDane();
